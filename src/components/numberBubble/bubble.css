@@ -1,0 +1,29 @@
+.PlusClass {
+  position: absolute;
+  background-color: brown;
+  color: white;
+  width: 18px;
+  font-size: 12px;
+  height: 18px;
+  border-radius: 100%;
+  border: none;
+  left: 304px;
+  top: 3px;
+  font-family: OpenSans-Bold;
+  padding: 4px;
+}
+.bubbleClass{
+  position: absolute;
+  background-color: brown;
+  color: white;
+  width: 15px;
+  font-size: 12px;
+  height: 15px;
+  border-radius: 100%;
+  border: none;
+  text-align: center;
+  left: 304px;
+  top: 3px;
+  font-family: OpenSans-Bold;
+  padding: 4px;
+}

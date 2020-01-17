@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
-
+import Bubble from "../numberBubble/Bubble";
 import Item from './item'
 import Lead from './lead'
 
@@ -33,6 +33,7 @@ class TopMenu extends Component {
     let top_menu_class = `top-menu ${this.state.menu_class}`
     return (
         <div>
+          <Bubble number={20} />
           <div className={top_menu_class} >
             <Lead text="Article Creator" />
             <div className='left'>
