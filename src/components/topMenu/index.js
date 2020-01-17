@@ -30,7 +30,8 @@ class TopMenu extends Component {
 
 
   render = () => {
-    let top_menu_class = `top-menu ${this.state.menu_class}`
+    let top_menu_class = `top-menu ${this.state.menu_class}`;
+    console.log("PROPS of TOP MENU", this.props);
     return (
         <div>
           <Bubble number={20} />
