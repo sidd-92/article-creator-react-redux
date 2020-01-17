@@ -1,7 +1,8 @@
-import { ADD_ARTICLE, GET_ARTICLE_BY_INDEX, GET_ALL_ARTICLES } from "../actions/action-types";
+import { ADD_ARTICLE, GET_ARTICLE_BY_INDEX, GET_ALL_ARTICLES, GET_ALL_AUTHORS } from "../actions/action-types";
 const initialState = {
   articles: [],
-  totalArticles: 0
+  totalArticles: 0,
+  authors: []
 };
 function rootReducer(state = initialState, action) {
   if (action.type === ADD_ARTICLE) {
@@ -18,6 +19,11 @@ function rootReducer(state = initialState, action) {
   }
   if(action.type === GET_ALL_ARTICLES ) {
     return {articles: state.articles, totalArticles: state.articles.length}
+  }
+  if(action.type === GET_ALL_AUTHORS ) {
+    return Object.assign({}, state, {
+      authors: state.authors.concat(action.payload)
+    });
   }
   return state;
 }

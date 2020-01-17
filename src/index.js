@@ -5,11 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store from "./store";
 import { Provider } from "react-redux";
-import { addArticle, getAllArticles, getArticle } from "./actions/index";
+import { addArticle, getAuthors } from "./actions/index";
 store.dispatch( addArticle({ title: 'React Redux Tutorial for Beginners', id: 1 }) );
 store.dispatch( addArticle({ title: 'Redux Master Tutorial for Beginners', id: 2 }) );
 store.dispatch( addArticle({ title: 'Master Tutorial for Beginners', id: 3 }) );
 store.dispatch( addArticle({ title: 'Tutorial for Beginners', id: 4 }) );
+store.dispatch(getAuthors());
 ReactDOM.render(<Provider store={store}><App/> </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

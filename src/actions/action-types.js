@@ -1,3 +1,4 @@
 export const ADD_ARTICLE = "ADD_ARTICLE";
 export const GET_ARTICLE_BY_INDEX = "GET_ARTICLE_BY_INDEX";
 export const GET_ALL_ARTICLES = "GET_ALL_ARTICLES";
+export const GET_ALL_AUTHORS = "GET_ALL_AUTHORS";
