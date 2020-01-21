@@ -1,11 +1,10 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import List from "./List";
-import ArticleForm from "./ArticleForm";
+import List from "./components/List/List";
+import ArticleForm from "./components/ArticleForm/ArticleForm";
 import TopMenu from "./components/topMenu/index";
 import { connect } from "react-redux";
-import { addTodo, getAuthors } from "./actions";
+import { addTodo, getAuthors } from "./store/actions";
 const mapStateToProps = state => {
   //console.log("STATE", state);
   return { reduxState: state };

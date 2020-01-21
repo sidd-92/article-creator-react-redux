@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
 import { connect } from "react-redux";
-import { addArticle } from "./actions/index";
+import { addArticle } from "../../store/actions/index";
 const mapStateToProps = state => {
-  console.log("STATE", state);
   return { articles: state.articles };
 };
 const ArticleForm = props => {
