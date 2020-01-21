@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import DropDown from "../DropDown/index";
 import { addArticle } from "../../store/actions/index";
 const mapStateToProps = state => {
   return { articles: state.articles };
@@ -32,6 +33,9 @@ const ArticleForm = props => {
           type="text"
           placeholder="Enter Author"
         />
+      </div>
+      <div className="FormField">
+        <DropDown />
       </div>
       <div className="FormField">
         <button

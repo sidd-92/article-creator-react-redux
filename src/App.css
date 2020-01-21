@@ -1,11 +1,11 @@
-.FormField{
+.FormField {
   margin: 10px 0px;
 }
 .FormField label {
   font-family: OpenSans-Bold;
   font-weight: bold;
 }
-.FormField input[type=text] {
+.FormField input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -15,6 +15,46 @@
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
+}
+.FormField .DropDown {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+.DropDown p {
+  width: 100%;
+}
+.DropDown p span {
+  float: right;
+}
+.OpenDropDown {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px 10px 3px;
+  margin: 9px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.OpenDropDown:hover {
+  background-color: #03a9f4;
+  color: white;
+}
+.OpenDropDownSelected {
+  color: white;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px 10px 3px;
+  margin: 9px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #03a9f4;
 }
 .FormField button {
   width: 100%;
@@ -30,10 +70,10 @@
   outline: none;
   cursor: pointer;
 }
-.FormField button:hover{
+.FormField button:hover {
   background-color: #29b6f6;
 }
-.FormBody{
+.FormBody {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
